@@ -13,23 +13,6 @@ overrides:
 
   -
     files:
-      - 'bin/**/*.ts'
-      - 'database/**/*.ts'
-    extends:
-      - '@matthiaskunnen/eslint-config-typescript-node'
-
-    parser: '@typescript-eslint/parser'
-
-    parserOptions:
-      project:
-        - tsconfig.lint.json
-      sourceType: module
-
-    rules:
-      no-console: off
-
-  -
-    files:
       - 'src/**/*.ts'
     extends:
       - '@matthiaskunnen/eslint-config-typescript-node'
@@ -42,5 +25,5 @@ overrides:
       sourceType: module
 
     rules:
-      '@typescript-eslint/no-inferrable-types': off # Required for TypeORM
       no-duplicate-imports: off # Waiting on https://github.com/eslint/eslint/pull/13196
+      no-console: off
