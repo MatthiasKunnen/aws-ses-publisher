@@ -1,7 +1,7 @@
 [![npm version](https://img.shields.io/npm/v/aws-ses-publisher.svg?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/aws-ses-publisher)
 [![Build Status](https://img.shields.io/github/workflow/status/MatthiasKunnen/aws-ses-publisher/Main?label=Build&logo=github&style=for-the-badge)
 ](https://github.com/MatthiasKunnen/aws-ses-publisher/actions)
-[![Build Status](https://img.shields.io/npm/l/aws-ses-publisher?&style=for-the-badge)
+[![Build Status](https://img.shields.io/npm/l/aws-ses-publisher?&style=for-the-badge&color=green)
 ](https://github.com/MatthiasKunnen/aws-ses-publisher/blob/master/LICENSE)
 
 # AWS SES publisher
