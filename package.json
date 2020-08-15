@@ -1,6 +1,6 @@
 {
     "name": "aws-ses-publisher",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "license": "LGPL-3.0-or-later",
     "description": "CLI/Node utility to publish templates to Amazon SES",
     "keywords": [
