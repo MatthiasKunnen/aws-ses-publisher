@@ -16,7 +16,7 @@ Example config:
     // The key is the template name
     "PasswordReset": { 
         "subject": "Example.com - Password reset",
-        // Filename relative to --templateDir. If not provided an empty string will be used
+        // Filename relative to --template-dir. If not provided an empty string will be used
         "html": "password-reset.html",
         "text": "password-reset.txt"
     }
