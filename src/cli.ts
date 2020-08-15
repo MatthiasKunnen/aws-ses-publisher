@@ -70,4 +70,7 @@ const publisher = new AwsSesPublisher({
     verbose: args.verbose,
 });
 
-publisher.publishEmailsWithConfig().catch(console.error);
+publisher.publishEmailsWithConfig().catch(err => {
+    console.error(err);
+    process.exit(1);
+});
