@@ -1,0 +1,46 @@
+---
+
+env:
+  es6: true
+  node: true
+
+overrides:
+  -
+    files:
+      - '*.js'
+    extends:
+      - '@matthiaskunnen/eslint-config-base'
+
+  -
+    files:
+      - 'bin/**/*.ts'
+      - 'database/**/*.ts'
+    extends:
+      - '@matthiaskunnen/eslint-config-typescript-node'
+
+    parser: '@typescript-eslint/parser'
+
+    parserOptions:
+      project:
+        - tsconfig.lint.json
+      sourceType: module
+
+    rules:
+      no-console: off
+
+  -
+    files:
+      - 'src/**/*.ts'
+    extends:
+      - '@matthiaskunnen/eslint-config-typescript-node'
+
+    parser: '@typescript-eslint/parser'
+
+    parserOptions:
+      project:
+        - tsconfig.lint.json
+      sourceType: module
+
+    rules:
+      '@typescript-eslint/no-inferrable-types': off # Required for TypeORM
+      no-duplicate-imports: off # Waiting on https://github.com/eslint/eslint/pull/13196

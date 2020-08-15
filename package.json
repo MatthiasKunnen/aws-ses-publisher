@@ -1,0 +1,49 @@
+{
+    "name": "aws-ses-publisher",
+    "version": "0.0.1",
+    "license": "LGPL-3.0-or-later",
+    "description": "CLI/Node utility to publish templates to Amazon SES",
+    "keywords": [
+        "aws-ses"
+    ],
+    "repository": "github:MatthiasKunnen/aws-ses-publisher",
+    "author": "Matthias Kunnen <matthias.kunnen@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/MatthiasKunnen/aws-ses-publisher/issues"
+    },
+    "homepage": "https://github.com/MatthiasKunnen/aws-ses-publisher#readme",
+    "private": false,
+    "bin": {
+        "ses-publish": "./bin/ses-publish"
+    },
+    "files": [
+        "bin",
+        "lib",
+        "src"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.app.json",
+        "compile:ts": "tsc -p tsconfig.strict.json",
+        "lint": "eslint \"src/**/*.ts\"",
+        "prepublishOnly": "yarn run build"
+    },
+    "dependencies": {
+        "@aws-sdk/client-ses": "^1.0.0-gamma.6",
+        "@aws-sdk/types": "^0.1.0-preview.1",
+        "typescript": "~3.9.5"
+    },
+    "devDependencies": {
+        "@matthiaskunnen/eslint-config-typescript-node": "^1.0.0",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11"
+    },
+    "engines": {
+        "node": ">=12.0.0",
+        "yarn": "~1.22.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}

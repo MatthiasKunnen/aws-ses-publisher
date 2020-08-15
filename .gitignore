@@ -1,0 +1,60 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# compiled output
+/lib
+/dist
+/tmp
+/out-tsc
+
+# packages
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Yarn https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+.pnp.*
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+.eslintcache
+.env
+*.local
+*.local.*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
