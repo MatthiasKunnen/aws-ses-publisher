@@ -16,6 +16,8 @@
     "bin": {
         "ses-publish": "./bin/ses-publish"
     },
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "scripts": {
         "build": "tsc -p tsconfig.app.json",
         "compile:ts": "tsc -p tsconfig.strict.json",
